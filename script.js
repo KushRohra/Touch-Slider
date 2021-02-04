@@ -17,6 +17,8 @@ slides.forEach((slide, index) => {
     slide.addEventListener('mousemove', touchMove);
 });
 
+window.addEventListener('resize', setPositionByIndex);
+
 // Disable context menu
 window.oncontextmenu = function(event) {
     event.preventDefault();
